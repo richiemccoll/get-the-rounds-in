@@ -8,6 +8,7 @@ import BarsContainer from "./components/Bars/BarsContainer";
 import SelectedBarContainer
   from "./components//SelectedBar/SelectedBarContainer";
 import DrinksContainer from "./components/Drinks/DrinksContainer";
+import RoundContainer from "./components/Round/RoundContainer";
 
 class App extends Component {
   render() {
@@ -36,6 +37,10 @@ class App extends Component {
             prices={this.props.prices}
             addDrink={this.props.drinkActions.addDrink}
           />}
+
+          {this.props.currentRound.length && 
+            <RoundContainer round={this.props.currentRound} />
+          }
       </Container>
     );
   }
@@ -46,7 +51,8 @@ function mapStateToProps(state, props) {
     bars: state.bars,
     selectedBar: state.selectedBar,
     drinks: state.drinks,
-    prices: state.prices
+    prices: state.prices,
+    currentRound: state.currentRound
   };
 }
 
