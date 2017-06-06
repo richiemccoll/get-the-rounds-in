@@ -16,7 +16,7 @@ const Round = ({ round, total, removeDrink, confirm }) => {
           />
         </Header>
       ))}
-      <Button onClick={confirm}>Confirm Round</Button>
+      <Button onClick={(e) => confirm(e, total)}>Confirm Round</Button>
       <Divider />
     </div>
   );

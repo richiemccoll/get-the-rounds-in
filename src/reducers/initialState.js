@@ -162,5 +162,9 @@ export default {
     }
   ],
   currentRound: {},
-  rounds: []
+  rounds: [],
+  notification: {
+    visible: false,
+    message: ''
+  }
 };

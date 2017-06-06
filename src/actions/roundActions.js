@@ -9,14 +9,13 @@ export const removeDrink = (drink) => {
 
 export const confirmRound = (round) => {
   return {
-    types: types.CONFIRM_ROUND,
+    type: types.CONFIRM_ROUND,
     round
   }
 }
 
-export const clearRound = (round) => {
-  return {
-    types: types.CLEAR_ROUND,
-    round
-  }
+export const clearRound = () => {
+    return {
+      type: types.CLEAR_ROUND
+    }
 };

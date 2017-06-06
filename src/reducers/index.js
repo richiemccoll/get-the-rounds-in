@@ -3,6 +3,8 @@ import selectedBar from './selectedBar/selectedBarReducer.js';
 import drinks from './drinks/drinksReducer';
 import prices from './prices/pricesReducer';
 import currentRound from './currentRound/currentRoundReducer';
+import rounds from './rounds/roundsReducer';
+import notification from './notification/notificationReducer';
 import { combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
@@ -10,7 +12,9 @@ const rootReducer = combineReducers({
    selectedBar,
    drinks,
    prices,
-   currentRound
+   currentRound,
+   rounds,
+   notification
 });
 
 export default rootReducer;
