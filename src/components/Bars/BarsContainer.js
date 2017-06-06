@@ -19,11 +19,7 @@ class BarsContainer extends Component {
       return { text, value }
     });
 
-    return (
-      <div>
-        <Bars bars={bars} selectBar={this.selectBar} />
-      </div>
-    );
+    return <Bars bars={bars} selectBar={this.selectBar} />
   }
 }
 

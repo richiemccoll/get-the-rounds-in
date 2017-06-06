@@ -3,9 +3,7 @@ import { Dropdown } from "semantic-ui-react";
 import PropTypes from "prop-types";
 
 const Bars = ({ bars, selectBar }) => {
-  return (
-    <div>
-        <Dropdown
+  return <Dropdown
           placeholder="Select bar.."
           fluid
           selection
@@ -13,8 +11,6 @@ const Bars = ({ bars, selectBar }) => {
           options={bars}
           onChange={selectBar}
         />
-    </div>
-  );
 };
 
 export default Bars;
