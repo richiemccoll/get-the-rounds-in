@@ -60,7 +60,7 @@ class App extends Component {
         {notification.visible &&
           <MessageContainer
             message={notification.message}
-            hideNotfication={this.props.notificationActions.hideNotification}
+            hideNotification={this.props.notificationActions.hideNotification}
           />}
 
       </Container>

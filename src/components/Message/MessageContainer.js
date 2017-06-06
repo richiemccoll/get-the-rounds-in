@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { Message } from "semantic-ui-react";
+import PropTypes from 'prop-types';
 
 class MessageContainer extends Component {
   constructor(props) {
     super(props);
+    this.handleDismiss = this.handleDismiss.bind(this);
   }
 
   componentDidMount() {
@@ -16,17 +18,18 @@ class MessageContainer extends Component {
 
   render() {
     return (
-      <div>
-        {this.state.visible &&
-          <Message
-            success
-            header={this.props.header}
-            content={this.props.message}
-            onDismiss={this.handleDismiss}
-          />}
-      </div>
+      <Message
+        success
+        content={this.props.message}
+        onDismiss={this.handleDismiss}
+      />
     );
   }
 }
 
 export default MessageContainer;
+
+MessageContainer.PropTypes = {
+    message: PropTypes.string,
+    hideNotification: PropTypes.func.isRequired
+}

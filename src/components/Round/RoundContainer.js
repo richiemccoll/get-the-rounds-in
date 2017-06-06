@@ -9,7 +9,7 @@ class RoundContainer extends Component {
 
     this.state = {
       open: false,
-      result: "show the modal to capture a result"
+      result: ""
     };
 
     this.removeDrink = this.removeDrink.bind(this);
