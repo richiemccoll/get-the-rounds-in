@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Round Component should render the current round items 1`] = `
+<div>
+  <div>
+    <div
+      className="ui divider"
+    />
+    <h3
+      className="ui header"
+    >
+      Current Round Total: £
+      2.70
+    </h3>
+    <h4
+      className="ui header"
+    >
+      Irn Bru
+      <i
+        className="remove circle icon"
+        onClick={[Function]}
+      />
+    </h4>
+    <button
+      className="ui button"
+      onClick={[Function]}
+      tabIndex={undefined}
+    >
+      Confirm Round
+    </button>
+    <div
+      className="ui divider"
+    />
+  </div>
+</div>
+`;

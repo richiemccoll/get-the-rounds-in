@@ -22,8 +22,8 @@ const SelectedBar = ({ name, image, address, description }) => (
 export default SelectedBar;
 
 SelectedBar.PropTypes = {
-  name: PropTypes.string,
-  image: PropTypes.string,
-  address: PropTypes.string,
-  description: PropTypes.string
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  address: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
 };

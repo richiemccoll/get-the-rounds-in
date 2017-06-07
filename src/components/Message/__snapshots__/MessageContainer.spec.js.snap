@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Message Container should render a message notification 1`] = `
+<div
+  className="ui success message"
+>
+  <i
+    aria-hidden="true"
+    className="close icon"
+    onClick={[Function]}
+  />
+  <div
+    className="content"
+  >
+    <p>
+      This is a notficiation
+    </p>
+  </div>
+</div>
+`;

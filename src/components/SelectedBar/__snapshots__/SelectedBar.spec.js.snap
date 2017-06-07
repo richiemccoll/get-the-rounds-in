@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Selected Bar Component should render the selected bar 1`] = `
+<div
+  className="ui card"
+  href={undefined}
+  onClick={[Function]}
+>
+  <img
+    alt={undefined}
+    className="ui image"
+    height={undefined}
+    src="./potstill.jpg"
+    width={undefined}
+  />
+  <div
+    className="content"
+  >
+    <div
+      className="header"
+    >
+      The Pot Still
+    </div>
+    <div
+      className="description"
+    >
+      154 Hope Street
+    </div>
+    <div
+      className="extra content"
+    >
+      A real local favourite, receiving more shout-outs from our followers than anywhere else. It’s a small pub with a massive drink selection, particularly if you’re in the mood for a whisky. 
+    </div>
+  </div>
+</div>
+`;

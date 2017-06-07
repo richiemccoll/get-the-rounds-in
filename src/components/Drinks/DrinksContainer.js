@@ -24,7 +24,7 @@ class DrinksContainer extends Component {
     const availableDrinks = currentBardrinks.map(i => i.filter(d => d));
 
     return (
-      <div className="row">
+      <div>
         <Header as="h2">Available drinks</Header>
         <Drinks drinks={availableDrinks} addDrink={addDrink} />
       </div>

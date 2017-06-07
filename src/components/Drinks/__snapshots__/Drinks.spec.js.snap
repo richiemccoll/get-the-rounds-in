@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Drinks renders the Drinks component and passes drinks, prices, currentBar and the addDrink function 1`] = `
+<div>
+  <h2
+    className="ui header"
+  >
+    Available drinks
+  </h2>
+  <ul
+    className="sc-bdVaJa gAOVPZ"
+  >
+    <li>
+      <div
+        className="ui card"
+        href={undefined}
+        onClick={[Function]}
+      >
+        <img
+          alt={undefined}
+          className="ui image"
+          height={undefined}
+          src="./stella.jpeg"
+          width={undefined}
+        />
+        <div
+          className="content"
+        >
+          <div
+            className="header"
+          >
+            Stella Artois
+          </div>
+          <div
+            className="description"
+          >
+            £
+            2.75
+          </div>
+          <div
+            className="extra content"
+          >
+            <div
+              className="ui two buttons"
+            >
+              <button
+                className="ui green basic button"
+                onClick={[Function]}
+                tabIndex={undefined}
+              >
+                Add To Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div
+        className="ui card"
+        href={undefined}
+        onClick={[Function]}
+      >
+        <img
+          alt={undefined}
+          className="ui image"
+          height={undefined}
+          src="./morgans.jpg"
+          width={undefined}
+        />
+        <div
+          className="content"
+        >
+          <div
+            className="header"
+          >
+            Morgans Spiced & Lemonade
+          </div>
+          <div
+            className="description"
+          >
+            £
+            3.75
+          </div>
+          <div
+            className="extra content"
+          >
+            <div
+              className="ui two buttons"
+            >
+              <button
+                className="ui green basic button"
+                onClick={[Function]}
+                tabIndex={undefined}
+              >
+                Add To Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
