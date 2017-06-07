@@ -1,20 +1,7 @@
 import React from "react";
-import { Card, Image, Button } from "semantic-ui-react";
+import { Card, Button } from "semantic-ui-react";
 import PropTypes from "prop-types";
-import styled from 'styled-components';
-
-const Wrapper = styled.ul`
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: space-between;
-
-  li {
-    margin-bottom: 1em;
-  }
-`;
+import { Wrapper, Image } from './CustomUI';
 
 class Drinks extends React.Component {
   constructor(props) {
@@ -48,8 +35,8 @@ class Drinks extends React.Component {
 }
 
 Drinks.PropTypes = {
-  addDrink: PropTypes.func,
-  drinks: PropTypes.array
+  addDrink: PropTypes.func.isRequired,
+  drinks: PropTypes.array.isRequired
 };
 
 const Drink = ({ name, image, price, addDrink }) => {
@@ -80,8 +67,8 @@ const Drink = ({ name, image, price, addDrink }) => {
 export default Drinks;
 
 Drink.PropTypes = {
-  name: PropTypes.string,
-  image: PropTypes.string,
-  price: PropTypes.number,
-  addDrink: PropTypes.func
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  addDrink: PropTypes.func.isRequired
 };

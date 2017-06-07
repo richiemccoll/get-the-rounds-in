@@ -9,7 +9,7 @@ class MessageContainer extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => this.props.hideNotification(), 2000);
+    setTimeout(() => this.props.hideNotification(), 3000);
   }
 
   handleDismiss() {

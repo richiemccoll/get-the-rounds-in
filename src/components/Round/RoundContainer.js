@@ -33,13 +33,12 @@ class RoundContainer extends Component {
     this.setState({ open: true });
   }
 
-  handleConfirm(total) {
+  handleConfirm() {
     const order = {
       id: Math.random().toString(36).slice(2),
       bar: this.props.bar,
       time: this.getTime(),
-      drinks: this.props.round,
-      total: total
+      drinks: this.props.round
     };
 
     this.props.confirmRound(order);

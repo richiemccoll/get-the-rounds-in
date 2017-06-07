@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     const { bars = {} } = this.props;
     const { selectedBar = "" } = this.props.selectedBar;
-    const { drinks, prices, currentRound, orderedRounds, notification } = this.props;
+    const { drinks, prices, currentRound, notification } = this.props;
 
     return (
       <Container>
